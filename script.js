@@ -2,6 +2,8 @@ $(document).ready(function() {
     getFact();
 });
 
+
+
 function showButtons(show) {
     if (show) {
         $('#likeButton').show();
@@ -33,9 +35,11 @@ function getFact() {
         url: 'http://dog-api.kinduff.com/api/facts',
         method: 'GET',
         data: {
+            facts
         },
         success: function(data, status) {
             console.log('Data received: ' + data + status); 
+            setInterval(getFact, 10000)
         },
         error: function(data) {
             console.log('Error: ' + data + status)
@@ -43,6 +47,7 @@ function getFact() {
     });
 }
 
-function createFact() {
-
+function createFact(data) {
+    $('#container3').empty();
+    var fact = $('<p></p>').text(data.facts);
 }
