@@ -1,12 +1,38 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+  </head>
+  <body>
+    <nav class="navbar bg-dark mb-4" data-bs-theme="dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="_124800859_gettyimages-817514614.jpg" width="52" height="44">
+            Dog facts
+          </a>
+        </div>
+    </nav>
+
+    <div class="container d-flex justify-content-center border rounded my-5 shadow" style="height: 600px; width: 900px;">
+        <button type="button" class="btn btn-dark my-5" style="width: 200px; height: 35px;">Generate dog fact</button>
+
+        <div>
+            <p></p>
+        </div>
+    </div>
+
+    <div class="container2 d-flex justify-content-evenly">
+        <button type="button" class="btn btn-dark" id="likeButton" style="width: 200px; height: 35px;">Like</button>
+        <button type="button" class="btn btn-dark" id="dislikeButoon" style="width: 200px; height: 35px;">Dislike</button>
+        <button type="button" class="btn btn-dark" id="newButton" style="width: 200px; height: 35px;">Generate new</button>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+  </body>
 </html>
